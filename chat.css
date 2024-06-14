@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e5ddd5;
+    margin: 0;
+    padding: 0;
+}
+
+#chat-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Asegura que todo el contenido esté centrado */
+    height: 95vh;
+    margin: 2vh auto;
+    width: 40%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding-top: 20px; /* Espacio para la imagen en la parte superior */
+}
+
+#chat-header img {
+    width: 80px; /* Tamaño del círculo */
+    height: 80px; /* Igual al ancho para mantener la forma circular */
+    object-fit: contain; /* Cambiado de 'cover' a 'contain' para no cortar partes */
+    border-radius: 50%; /* Mantiene el efecto circular */
+    border: none;
+    margin: 0 auto;
+    display: block;
+    box-shadow: none;
+}
+
+#chat-box {
+    flex-grow: 1;
+    width: calc(100% - 20px); /* Ajusta el ancho dentro del contenedor */
+    padding: 10px;
+    overflow-y: auto;
+}
+
+#chat-input {
+    width: calc(100% - 20px); /* Ajusta el ancho dentro del contenedor */
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+button {
+    margin-top: 10px; /* Añade espacio en la parte superior del botón */
+    margin-right: 10px; /* Asegura espacio a la derecha (si es necesario) */
+    padding: 10px 20px; /* Ajusta el relleno interno para el tamaño del botón */
+    border: none;
+    background-color: #071b9b; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border-radius: 20px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse sobre el botón */
+    font-size: 16px; /* Tamaño del texto */
+    display: block; /* Opcional: cambia el display si es necesario */
+}
+
+.mensaje-usuario {
+    background-color: #071b9b;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    width: fit-content;
+    margin: 5px 0 5px auto;
+}
+
+.mensaje-bot {
+    background-color: #fefefe;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 20px;
+    width: fit-content;
+    margin: 5px auto 5px 0;
+}
